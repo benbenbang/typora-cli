@@ -7,13 +7,14 @@ A minimal cross-platform CLI wrapper that opens files in [Typora](https://typora
 ## Usage
 
 ```sh
-typora-cli                  # open current directory in Typora
-typora-cli .                # same as above
-typora-cli notes.md         # open (or create) notes.md in the current directory
-typora-cli notes            # open (or create) a file called "notes" — no extension is added
-typora-cli docs/readme.md   # create any missing parent directories, then open
-typora-cli ../shared.md     # relative paths work too
-typora-cli /abs/path/to/file.md  # absolute paths work too
+# typora-cli -> tyv
+tyc                  # open current directory in Typora
+tyc .                # same as above
+tyc notes.md         # open (or create) notes.md in the current directory
+tyc notes            # open (or create) a file called "notes" — no extension is added
+tyc docs/readme.md   # create any missing parent directories, then open
+tyc ../shared.md     # relative paths work too
+tyc /abs/path/to/file.md  # absolute paths work too
 ```
 
 The file is created with exactly the name you provide — no extension is appended automatically.
